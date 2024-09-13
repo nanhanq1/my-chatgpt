@@ -22,7 +22,7 @@ function MaskItem(props: { mask: Mask; onClick?: () => void }) {
 }
 
 export function MaskAvatar(props: { avatar: string }) {
-  return  (
+  return (
     <Avatar avatar={props.avatar} />
   );
 }
@@ -44,6 +44,7 @@ export function MaskPage() {
 
   useEffect(() => {
     fetchMasks();
+    // uploadMasks();
   }, [])
 
   return (
@@ -64,14 +65,14 @@ export function MaskPage() {
       <div className={styles["sub-title"]}>{"现在开始，与面具背后的灵魂思维碰撞"}</div>
 
       <div className={styles["mask-container"]}>
-          {masks.map((mask, index) => (
-            <MaskItem
-              key={index}
-              mask={mask}
-              onClick={() => startChat(mask)}
-            />
-          ))}
-        </div>
+        {masks.map((mask, index) => (
+          <MaskItem
+            key={index}
+            mask={mask}
+            onClick={() => startChat(mask)}
+          />
+        ))}
+      </div>
     </div>
   );
 }

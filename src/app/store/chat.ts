@@ -83,7 +83,7 @@ function uploadMessage(session: ChatSession, message: ChatMessage) {
                 "Content-Type": "application/json",
             },
             body: JSON.stringify(message)
-        })
+        });
 }
 
 function countMessages(msgs: ChatMessage[]) {
@@ -220,7 +220,7 @@ export const useChatStore = create<ChatState>()(
             ).then((res) => {
                 const sessions = get().sessions.slice();
                 sessions.splice(index, 1);
- 
+
                 const currentIndex = get().currentSessionIndex;
                 let nextIndex = Math.min(
                     currentIndex - Number(index < currentIndex),

@@ -10,11 +10,11 @@
   },
   "dependencies": {
     "@microsoft/fetch-event-source": "^2.0.1",
-    "@svgr/webpack": "^8.1.0",
     "dotenv": "^16.4.5",
     "emoji-picker-react": "^4.9.2",
     "html-to-image": "^1.11.11",
     "mermaid": "^10.9.1",
+    "nanoid": "^5.0.7",
     "next": "14.2.3",
     "react": "^18",
     "react-dom": "^18",
@@ -25,11 +25,12 @@
     "remark-breaks": "^4.0.0",
     "remark-gfm": "^4.0.0",
     "remark-math": "^6.0.0",
-    "sass": "^1.77.0",
+    "sass": "^1.78.0",
     "use-debounce": "^10.0.0",
-    "zustand": "^4.5.2"
+    "zustand": "^4.5.5"
   },
   "devDependencies": {
+    "@svgr/webpack": "^8.1.0",
     "@types/node": "^20",
     "@types/react": "^18",
     "@types/react-dom": "^18",

@@ -50,7 +50,7 @@ export const useMaskStore = create<MaskState>()(
   persist((set, get) => ({
     masks: [],
     uploadMasks: async () => {
-      // fetch((process.env.NEXT_PUBLIC_API_URL + "/mask/add_all"), { method: "post", headers: {"Content-Type": "application/json"}, body: JSON.stringify(CN_MASKS) }).then((res) => {
+      // fetch((process.env.NEXT_PUBLIC_API_URL + "/mask/add_all"), { method: "post", headers: { "Content-Type": "application/json" }, body: JSON.stringify(CN_MASKS) }).then((res) => {
       //   console.log("masks=================================================" + res.text());
       //   set({ masks: get().masks })
       // }).catch(e => {
